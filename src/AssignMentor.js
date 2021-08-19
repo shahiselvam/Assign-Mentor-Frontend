@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Home from './home';
 import axios from 'axios';
-import 'font-awesome/css/font-awesome.min.css';
 
 
 const API_URL = 'https://assign-mentor-backend.herokuapp.com/students';
@@ -254,12 +253,12 @@ export default class assignMentor extends Component {
                                                                 
                                                                 <td>
 
-                                                                    <i class="fa fa-pencil-square-o" aria-hidden="true" onClick={() => this.editStudents(mentor)}></i>
+                                                                    <i class="fa fa-pencil-square-o" aria-hidden="true" onClick={() => this.editStudents(mentor)}>Edit</i>
 
                                                                 </td>
                                                                 <td>
 
-                                                                    <i class="fa fa-trash" aria-hidden="true" onClick={() => this.deleteStudents(mentor._id)}></i>
+                                                                    <i class="" aria-hidden="true" onClick={() => this.deleteStudents(mentor._id)}>Delete</i>
 
                                                                 </td>
                                                             </tr>
